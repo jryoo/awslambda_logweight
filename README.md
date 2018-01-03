@@ -1,4 +1,4 @@
-Alexa Log Weight
+# Alexa Log Weight
 This is a side project to log my weight to Fitbit using Alexa.
 
 ## Setting up your Lambda Function
