@@ -13,15 +13,15 @@ This is a side project to log my weight to Fitbit using Alexa.
 9. When the IAM role management console opens, choose **Allow** to go back to the previous Lambda console.
 10. The role should read `lambda_basic_execution`.
 11. In your [IAM roles](https://console.aws.amazon.com/iam/home#/roles) attach the **AWSLambdaFullAccess** policy to your role.
-    1. Add environment variables. These give you access to Fitbit. Note that the Alexa application id and the Alexa test application id are filtered.
-        1. **CLIENT_SECRET**
-        2. **CLIENT_ID**
-        3. **EXPIRES_AT**
-        4. **REDIRECT_URI**
-        5. **REFRESH_TOKEN**
-        6. **TOKEN**
-        7. **ALEXA_APPLICATION_ID**
-        8. **ALEXA_TEST_APPLICATION_ID**
+12. Add environment variables. These give you access to Fitbit. Note that the Alexa application id and the Alexa test application id are filtered.
+    1. **CLIENT_SECRET**
+    2. **CLIENT_ID**
+    3. **EXPIRES_AT**
+    4. **REDIRECT_URI**
+    5. **REFRESH_TOKEN**
+    6. **TOKEN**
+    7. **ALEXA_APPLICATION_ID**
+    8. **ALEXA_TEST_APPLICATION_ID**
 
 ## Setting up your Amazon developer portal
 1. Sign into the [Amazon Developer Portal](https://developer.amazon.com/login.html).
