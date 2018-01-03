@@ -12,6 +12,16 @@ This is a side project to log my weight to Fitbit using Alexa.
 8. Under Lambda function handler and role, select **Create a custom role**.
 9. When the IAM role management console opens, choose **Allow** to go back to the previous Lambda console.
 10. The role should read `lambda_basic_execution`.
+11. In your [IAM roles](https://console.aws.amazon.com/iam/home#/roles) attach the **AWSLambdaFullAccess** policy to your role.
+    1. Add environment variables. These give you access to Fitbit. Note that the Alexa application id and the Alexa test application id are filtered.
+        1. **CLIENT_SECRET**
+        2. **CLIENT_ID**
+        3. **EXPIRES_AT**
+        4. **REDIRECT_URI**
+        5. **REFRESH_TOKEN**
+        6. **TOKEN**
+        7. **ALEXA_APPLICATION_ID**
+        8. **ALEXA_TEST_APPLICATION_ID**
 
 ## Setting up your Amazon developer portal
 1. Sign into the [Amazon Developer Portal](https://developer.amazon.com/login.html).
@@ -91,7 +101,6 @@ WhatsMyWeightIntent yes please
 2. While within the project directory you can call `./install.sh` to install all of the requirements.
 3. Zip up all of the files by running `zip -r -X lambdaD.zip .`
 4. Then upload the zipfile to your lambda function
-
 
 ## Resources and Credit
 - https://developer.amazon.com/alexa-skills-kit/alexa-skill-quick-start-tutorial
